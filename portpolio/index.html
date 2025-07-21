@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAVINDU METHMAL | Full-Stack Developer/LARAVEL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Social Links -->
+    <div class="social-links">
+        <a href="https://github.com/kmigalavithana" class="social-link" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/kavindu-methmal-498921275/" class="social-link" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+    </div>
+
+    <!-- Hero Section with Profile -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">KAVINDU METHMAL</h1>
+                <h2 class="hero-title">I'm a <span class="typing-text">Full-Stack Developer/LARAVEL</span></h2>
+                <p class="hero-description">
+                    Passionate about building seamless, efficient, and user-friendly web applications. 
+                    I love turning ideas into reality through clean, scalable code and innovative solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-message"></i>
+                        Let's Talk
+                    </a>
+                    <button onclick="downloadCV()" class="btn btn-secondary">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </button>
+                </div>
+            </div>
+            
+            <div class="profile-section">
+                <div class="profile-image-container">
+                    <img id="profileImage" 
+                         src="./images/kavindu.jpg"
+                         alt="Profile Picture" 
+                         class="profile-image">
+                    <div class="profile-overlay">
+                        <span style="font-size: 25px;">👨‍💻⌨️💡</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Software Engineering Student & Full-Stack Developer</h3>
+                    <p>
+                        A highly motivated and detail-oriented Software Engineering undergraduate with hands-on experience in full-stack development using Laravel (PHP) for backend and modern frontend technologies including React.js. Passionate about creating scalable web applications with robust API architectures, secure authentication systems, and responsive user interfaces. Experienced in implementing Test-Driven Development practices, database design with MySQL, and state management solutions. Quick learner with a collaborative mindset, eager to contribute to real-world projects and continuously evolve as a versatile full-stack developer.
+                    </p>
+
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg" alt="Laravel" height="28" style="margin-bottom: 5px;">
+                        <p>Laravel</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" height="28" style="margin-bottom: 5px;">
+                        <p>MySQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" height="28" style="margin-bottom: 5px;">
+                        <p>AWS</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <p>MongoDB</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <p>Python</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js-square"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-figma"></i>
+                        <p>Figma</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Library Management System</h3>
+                    <p class="project-description">
+                        Built a full-stack Library Management System with a 5-member team using Node.js, React.js, and MySQL, featuring secure login, book inventory, and borrowing/return tracking.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Tailwind</span>
+                        <span class="tech-tag">Sprig</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/anushamanujaya/Library_Management_System.git" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Medicare Mobile Application</h3>
+                    <p class="project-description">
+                        Developed a healthcare app using Flutter and Firebase with appointment booking, real-time tracking, video calls, and Stripe payments. Ensured secure medical record access and smooth UX in an 8-member Agile team.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Dart</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/anushamanujaya/medicare.git" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <!-- Add this in the Projects Section under <div class="projects-grid"> -->
+
+                <div class="project-card">
+                    <h3 class="project-title">Shopping Cart Web Application</h3>
+                    <p class="project-description">
+                        Developed a full-stack e-commerce shopping cart application using Laravel (PHP), React.ts, and MySQL with Test-Driven Development methodology.<br>
+                        • Implemented secure user authentication with Laravel Sanctum token-based authorization and protected API endpoints with custom middleware.<br>
+                        • Built complete shopping cart functionality including product management, cart operations, quantity controls, and Redux state management for real-time updates.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg" alt="Laravel" height="20" style="vertical-align:middle;"> Laravel</span>
+                        <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" height="20" style="vertical-align:middle;"> React.ts</span>
+                        <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" height="20" style="vertical-align:middle;"> TypeScript</span>
+                        <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" height="20" style="vertical-align:middle;"> MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kmigalavithana/laravel-react-auth-app" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hidden Additional Projects -->
+            <div id="moreProjects" class="projects-grid hidden">
+                <div class="project-card">
+                    <h3 class="project-title">School Website</h3>
+                    <p class="project-description">
+                        Developed a responsive school website using HTML, CSS, and JavaScript, showcasing key sections like home, about, academics, events, and contact. Designed with a clean layout and smooth navigation to enhance user experience across devices.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/anushamanujaya/School_Website_.git" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Movie Search App</h3>
+                    <p class="project-description">
+                        A Movie Search App built with HTML, 3D CSS, and JavaScript that fetches movie details from the OMDb API, displaying posters, titles, and release years in a sleek, responsive design.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/anushamanujaya/mini_project.git" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">E-commerce</h3>
+                    <p class="project-description">
+                        Developed an e-commerce application in Java featuring product catalog management, user authentication, and order processing, providing a basic yet functional online shopping experience.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">JSP</span>
+                        <span class="tech-tag">Servlets</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DgvDilshan/E-Commerce-using-Java.git" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Restaurant Website</h3>
+                    <p class="project-description">
+                        A responsive restaurant website built with HTML, CSS, and JavaScript, featuring menu browsing, table reservations, and a contact section with a clean, user-friendly design.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/anushamanujaya/Restaurant.git" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Chat Application</h3>
+                    <p class="project-description">
+                        Real-time chat application with private messaging, group chats, and file sharing.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">React</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Expense Tracker</h3>
+                    <p class="project-description">
+                        Personal finance application with expense categorization, budgeting tools, and reports.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Chart.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Job Board</h3>
+                    <p class="project-description">
+                        A job listing platform with advanced search, applicant tracking, and employer dashboard.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>            
+            </div>
+            
+            <div class="section-button-container">
+                <button id="viewAllProjects" class="btn btn-primary">
+                    <i class="fas fa-eye"></i>
+                    View All Projects
+                </button>
+                <a href="https://github.com/anushamanujaya" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-github"></i>
+                    GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>
+                        I'm always interested in new opportunities and exciting projects. 
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p>kavindumethmal.km@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>+94 71 581 6413</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong>
+                            <p>Homagama, Sri Lanka</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" action="https://formspree.io/f/xzzgagwo" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Anusha Manujaya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
